@@ -61,6 +61,17 @@ export const config: Config = {
       transformGroup: 'js',
       transforms: [nameKebab, timeSeconds],
     },
+    tailwind: {
+      buildPath: 'dist/tailwind/',
+      prefix: 'sbb',
+      files: [
+        {
+          destination: 'tailwind.config.json',
+          format: 'custom/format/tailwind',
+        },
+      ],
+      transforms: [nameKebab, timeSeconds, 'custom/transform/pxToRem'],
+    },
     scss: {
       buildPath: 'dist/scss/',
       prefix: 'sbb',

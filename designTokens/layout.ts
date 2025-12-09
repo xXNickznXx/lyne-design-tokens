@@ -1,6 +1,6 @@
 import type { DesignTokens } from 'style-dictionary/types';
 
-export const layout: DesignTokens = {
+export const layout = {
   base: {
     grid: {
       columns: {
@@ -69,4 +69,4 @@ export const layout: DesignTokens = {
       },
     },
   },
-};
+} satisfies DesignTokens;

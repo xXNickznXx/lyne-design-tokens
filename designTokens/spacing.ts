@@ -7,7 +7,7 @@ const attributes: DesignTokens = {
   type: 'dimension',
 };
 
-export const spacing: DesignTokens = {
+export const spacing = {
   fixed: {
     '1x': {
       value: calculatedSpacing(1),
@@ -228,4 +228,4 @@ export const spacing: DesignTokens = {
       },
     },
   },
-};
+} satisfies DesignTokens;

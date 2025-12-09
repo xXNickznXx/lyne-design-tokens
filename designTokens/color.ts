@@ -1,8 +1,10 @@
 import type { DesignTokens } from 'style-dictionary/types';
 
-const attributes: DesignTokens = { type: 'color' };
+const attributes: DesignTokens = {
+  type: 'color',
+};
 
-export const color: DesignTokens = {
+export const color = {
   black: {
     value: '#000000',
     ...attributes,
@@ -211,4 +213,4 @@ export const color: DesignTokens = {
     value: '#00a59b',
     ...attributes,
   },
-};
+} satisfies DesignTokens;

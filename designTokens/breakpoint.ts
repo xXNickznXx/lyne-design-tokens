@@ -4,7 +4,7 @@ const attributes: DesignTokens = {
   type: 'dimension',
 };
 
-export const breakpoint: DesignTokens = {
+export const breakpoint = {
   zero: {
     min: {
       value: '0px',
@@ -45,4 +45,4 @@ export const breakpoint: DesignTokens = {
       ...attributes,
     },
   },
-};
+} satisfies DesignTokens;

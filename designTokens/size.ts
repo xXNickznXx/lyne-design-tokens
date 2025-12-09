@@ -4,7 +4,7 @@ const attributes: DesignTokens = {
   type: 'dimension',
 };
 
-export const size: DesignTokens = {
+export const size = {
   element: {
     xxxs: {
       zero: {
@@ -135,4 +135,4 @@ export const size: DesignTokens = {
       },
     },
   },
-};
+} satisfies DesignTokens;

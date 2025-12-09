@@ -5,6 +5,7 @@ import * as sass from 'sass';
 import * as fs from 'fs';
 import { fileHeader, getReferences, usesReferences } from 'style-dictionary/utils';
 import { transformTypes } from 'style-dictionary/enums';
+import { tailwindFormat } from './tailwind/createTailwindConfig.js';
 const { value: transformTypeValue } = transformTypes;
 
 const styleDictionary = new StyleDictionary(config);
@@ -18,6 +19,8 @@ styleDictionary.registerTransform({
   filter: (token) => token.type === 'dimension',
   transform: (token) => `${parseInt(token.value) / 16}rem`,
 });
+
+StyleDictionary.registerFormat(tailwindFormat);
 
 styleDictionary.registerFormat({
   format: async ({ file, dictionary }: FormatFnArguments) => {

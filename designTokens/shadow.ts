@@ -58,7 +58,7 @@ const shadowObject = (
   },
 });
 
-export const shadow: DesignTokens = {
+export const shadow = {
   elevation: {
     level: {
       3: {
@@ -75,4 +75,4 @@ export const shadow: DesignTokens = {
       },
     },
   },
-};
+} satisfies DesignTokens;

@@ -7,7 +7,7 @@ const attributes: DesignTokens = {
   type: 'dimension',
 };
 
-export const typo: DesignTokens = {
+export const typo = {
   fontFamily: {
     type: 'fontFamily',
     value: '"SBB", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -80,4 +80,4 @@ export const typo: DesignTokens = {
       ...attributes,
     },
   },
-};
+} satisfies DesignTokens;
